@@ -16,7 +16,7 @@ services:
       - mean_network
     # ===== SERVICE 2: Node.js Backend ===== 
   backend: 
-    image: YOUR_DOCKERHUB_USERNAME/mean-backend:latest 
+    image: shivateja1100/mean-backend:latest 
     container_name: backend 
     restart: always 
     ports: 
@@ -33,7 +33,7 @@ services:
  
   # ===== SERVICE 3: Angular Frontend ===== 
   frontend: 
-    image: YOUR_DOCKERHUB_USERNAME/mean-frontend:latest 
+    image: shivateja1100/mean-frontend:latest 
     container_name: frontend 
     restart: always 
     depends_on: 
