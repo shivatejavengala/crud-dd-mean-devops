@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const db = require("./app/models");
 db.mongoose
-  .connect(db.url, {
+  .connect('mongodb://localhost:27017/meandb', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
